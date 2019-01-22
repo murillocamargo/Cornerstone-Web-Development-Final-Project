@@ -29,6 +29,15 @@
         }
     }
 
+    &.contact-header {
+        @include bgi("header-contact.jpg");
+
+        .headline {
+            width: 300px;
+            margin-left: -150px;
+        }
+    }
+
     .headline {
         position: absolute;
         top: 50%;
