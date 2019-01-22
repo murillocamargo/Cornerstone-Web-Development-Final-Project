@@ -20,6 +20,15 @@
         }
     }
 
+    &.food-header {
+        @include bgi("header-food.jpg");
+
+        .headline {
+            width: 300px;
+            margin-left: -150px;
+        }
+    }
+
     .headline {
         position: absolute;
         top: 50%;
