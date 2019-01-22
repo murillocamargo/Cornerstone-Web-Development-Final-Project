@@ -15,3 +15,17 @@
     color: #FFF;
     margin: 0;
 }
+
+.social-media {
+    text-align: right;
+
+    a {
+        margin: 0 0 0 10px;
+        color: #FFF;
+        text-decoration: none;
+
+        i {
+            font-size: em(30);
+        }
+    }
+}
