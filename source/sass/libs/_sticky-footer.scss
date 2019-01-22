@@ -9,6 +9,7 @@ body {
 
 /* Wrapper for page content to push down footer */
 #wrap {
+    position: relative;
     min-height: 100%;
     height: auto !important;
     height: 100%;
@@ -16,6 +17,7 @@ body {
     margin: 0 auto -60px;
     /* Pad bottom by footer height */
     padding: 0 0 60px;
+    overflow: hidden;
 }
 
 /* Set the fixed height of the footer here */

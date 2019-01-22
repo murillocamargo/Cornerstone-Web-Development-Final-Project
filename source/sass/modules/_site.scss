@@ -1,0 +1,21 @@
+$montserrat: 'Montserrat', sans-serif;
+$lato: 'Lato', sans-serif;
+$lobster: 'Lobster Two', cursive;
+
+h1, h2, h3 {
+    font-family: $montserrat;
+}
+
+p, a {
+    font-family: $lato;
+}
+
+.container {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+}

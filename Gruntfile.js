@@ -68,6 +68,39 @@ module.exports = function (grunt) {
             }
         },
 
+        imagemin: {
+
+            jpgDist: {
+                options: {
+                    optimizationLevel: 0,
+                    progressive: true
+                },
+
+                files: [
+                    {
+                        expand: true,
+                        cwd: '<%= config.source%>/images',
+                        src: ['**/*.{jpg,jpeg}'],
+                        dest: '<%= config.assets%>/images'
+                    }
+                ]
+            },
+            pngDist: {
+                options: {
+                    optimizationLevel: 0
+                },
+
+                files: [
+                    {
+                        expand: true,
+                        cwd: '<%= config.source%>/images',
+                        src: ['**/*.png'],
+                        dest: '<%= config.assets%>/images'
+                    }
+                ]
+            }
+        },
+
         watch: {
             options: {
                 livereload: true
@@ -76,6 +109,14 @@ module.exports = function (grunt) {
             sass: {
                 files: ['<%= config.source%>/sass/**/*.scss'],
                 tasks: ['newer:sass', 'cssmin'],
+                options: {
+                    spawn: false
+                }
+            },
+
+            images: {
+                files: ['<%= config.source%>/images/**/*.{png,jpg,gif,svg}'],
+                tasks: ['newer:imagemin'],
                 options: {
                     spawn: false
                 }
@@ -93,6 +134,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean',
+        'imagemin',
         'sass_globbing:main',
         'sass',
         'cssmin'
