@@ -11,18 +11,30 @@
         @include bgi("header-home.jpg");
     }
 
+    &.about-header {
+        @include bgi("header-about.jpg");
+
+        .headline {
+            width: 200px;
+            margin-left: -100px;
+        }
+    }
+
     .headline {
         position: absolute;
         top: 50%;
         left: 50%;
         margin-left: -360px;
         margin-top: -50px;
-        max-width: 720px;
+        width: 720px;
         text-align: center;
 
         h2 {
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
             margin: 0;
-            font-size: em(60);
+            font-size: em(55);
+            line-height: 1;
             color: #FFF;
             font-family: 'Lobster Two', cursive;
         }
