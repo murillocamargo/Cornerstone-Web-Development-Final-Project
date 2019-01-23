@@ -1,0 +1,35 @@
+.food-menu {
+    margin-top: 50px;
+}
+
+.food-menu-item {
+    margin: 15px 0;
+    width: 100%;
+
+    .img-fluid {
+        margin-bottom: 0;
+    }
+
+    .row > div {
+        position: relative;
+    }
+}
+
+.food-label {
+
+    span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: cadetblue;
+
+        font-family: "Montserrat", sans-serif;
+        color: #FFF;
+        font-size: em(30);
+        font-weight: 700;
+        text-align: center;
+        padding-top: 45%;
+    }
+}
