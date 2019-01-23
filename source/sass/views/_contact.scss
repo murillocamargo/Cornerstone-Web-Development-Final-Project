@@ -1,8 +1,10 @@
 // #3B4043, Hover: #7ed1dd; Other: white, and kind of black
 
 .container {
+
+    margin: 0 10px;
     p {
-        margin-bottom: 5px;
+        margin: 0 0 5px 0;
     }
 }
 
@@ -59,7 +61,7 @@ form {
     }
     button {
         position: absolute;
-        bottom: -30px;
+        bottom: -20px;
         right: -50px;
         width: 80px;
         background: rgb(51, 51, 51);
