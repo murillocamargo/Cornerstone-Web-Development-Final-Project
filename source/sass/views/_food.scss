@@ -1,5 +1,10 @@
 .food-menu {
     margin-top: 50px;
+
+    @media screen and (max-width: 767px) {
+
+        margin-bottom: 75px;
+    }
 }
 
 .food-menu-item {
@@ -12,6 +17,11 @@
 
     .row > div {
         position: relative;
+    }
+
+    @media screen and (max-width: 767px) {
+
+        .col-xs-12 {}
     }
 }
 
@@ -31,5 +41,15 @@
         font-weight: 700;
         text-align: center;
         padding-top: 45%;
+    }
+
+    @media screen and (max-width: 767px) {
+
+        height: 80px;
+
+        span {
+            position: relative;
+            padding-top: 20px;
+        }
     }
 }
